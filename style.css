@@ -1,0 +1,101 @@
+body{
+    background-color: #f5fffa;
+    color: #4682b4;
+    width: auto;
+    height: auto;
+}
+
+.copy{
+    text-align: center;
+}
+
+.grade-container {
+  width: min(75rem, 100%);
+  margin-inline: auto;
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.card {
+  --grad: red, blue;
+  padding: 40px; 
+  background-image: linear-gradient(to bottom left, #e0e4e5, #f2f6f9);
+  border-radius: 2rem;
+  gap: 2.0rem;
+  display: grid;
+  grid-template: 'title icon' 'content content' 'bar bar' / 1fr auto;
+  font-family: system-ui, sans-serif;
+  color: #444447;
+  box-shadow: 0 0 10px black;
+  transition: none;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.card-link:hover .card{
+  transform: scale(1.10);
+  transition: 1.5s;
+}
+
+.title {
+  font-size: 1.5rem;
+  grid-area: title;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+    .icon {
+      grid-area: icon;
+      font-size: 3rem;
+
+      > i {
+        color: transparent;
+        background: linear-gradient(to right, var(--grad));
+        background-clip: text;
+      }
+    }
+    .content {
+      grid-area: content;
+      text-align: center;
+      & > *:first-child { margin-top: 0rem}
+      & > *:last-child { margin-bottom: 0rem}
+    }
+    &::after {
+      content: "";
+      grid-area: bar;
+      height: 2px;
+      background-image: linear-gradient(90deg, var(--grad));
+    }
+  
+.introdução{
+    background-color: #4682b4;
+    color: #f5fffa;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.h1{
+  font-size: 60px;
+}
+
+.card-link{
+  text-decoration: none;
+  color: inherit;
+}
+
+footer{
+  text-align: center;
+  margin: 5%;
+  font-style: italic;
+  color: black;
+}
