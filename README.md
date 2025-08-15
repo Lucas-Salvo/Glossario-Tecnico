@@ -14,9 +14,9 @@ Com ele, você poderá:
 - **JavaScript** 
 
 - ## Demonstração
-*(Adicione aqui um print ou GIF do projeto rodando)*
+<img width="1599" height="779" alt="image" src="https://github.com/user-attachments/assets/1cdfa75e-71d5-4fb5-9165-2c937f7ec3c8" />
+
 
 - ## Como Usar
-- Clone este repositório:
-- Via Git Bash
-- 
+- Clone este repositório: Git Bash
+- https://github.com/Lucas-Salvo/Glossario-Tecnico.git
